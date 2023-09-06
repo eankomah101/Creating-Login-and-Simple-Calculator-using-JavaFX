@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="590.0" prefWidth="717.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx1.HelloController">
+   <children>
+      <Separator layoutX="24.0" layoutY="322.0" prefHeight="0.0" prefWidth="307.0" />
+      <Separator layoutX="328.0" layoutY="23.0" orientation="VERTICAL" prefHeight="299.0" prefWidth="6.0" />
+      <Separator layoutX="21.0" layoutY="23.0" orientation="VERTICAL" prefHeight="299.0" prefWidth="0.0" />
+      <Separator layoutX="455.0" layoutY="21.0" prefHeight="3.0" prefWidth="241.0" />
+      <Separator layoutX="365.0" layoutY="323.0" prefHeight="3.0" prefWidth="338.0" />
+      <Separator layoutX="109.0" layoutY="343.0" prefHeight="3.0" prefWidth="589.0" />
+      <Separator layoutX="24.0" layoutY="574.0" prefHeight="3.0" prefWidth="675.0" />
+      <Separator layoutX="359.0" layoutY="23.0" orientation="VERTICAL" prefHeight="299.0" prefWidth="6.0" />
+      <Separator layoutX="693.0" layoutY="23.0" orientation="VERTICAL" prefHeight="299.0" prefWidth="6.0" />
+      <Separator layoutX="18.0" layoutY="344.0" orientation="VERTICAL" prefHeight="231.0" prefWidth="0.0" />
+      <Separator layoutX="699.0" layoutY="345.0" orientation="VERTICAL" prefHeight="231.0" prefWidth="0.0" />
+      <Text layoutX="27.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Basic Math Calculations" />
+      <Separator layoutX="156.0" layoutY="22.0" prefHeight="3.0" prefWidth="172.0" />
+      <Text layoutX="377.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" />
+      <Text layoutX="27.0" layoutY="348.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Read Text File" />
+      <Text layoutX="377.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mobile" />
+      <Text layoutX="37.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Second Number" />
+      <Text layoutX="377.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Full Name" />
+      <Text layoutX="37.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter First Number" />
+      <Text layoutX="365.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Details" />
+      <Separator layoutX="660.0" layoutY="179.0" orientation="VERTICAL" prefHeight="78.0" prefWidth="0.0" />
+      <Separator layoutX="388.0" layoutY="182.0" orientation="VERTICAL" prefHeight="78.0" prefWidth="6.0" />
+      <Separator layoutX="437.0" layoutY="181.0" prefHeight="3.0" prefWidth="226.0" />
+      <Separator layoutX="391.0" layoutY="258.0" prefHeight="3.0" prefWidth="272.0" />
+      <Text layoutX="394.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gender" />
+      <TextField fx:id="fnum" layoutX="165.0" layoutY="64.0" />
+      <TextField fx:id="snum" layoutX="165.0" layoutY="109.0" />
+      <TextField fx:id="email" layoutX="455.0" layoutY="141.0" prefHeight="26.0" prefWidth="206.0" />
+      <TextField fx:id="mobile" layoutX="455.0" layoutY="101.0" prefHeight="26.0" prefWidth="206.0" />
+      <TextField fx:id="fname" layoutX="455.0" layoutY="61.0" prefHeight="26.0" prefWidth="206.0" />
+      <ComboBox fx:id="comboBox" layoutX="77.0" layoutY="168.0" prefHeight="26.0" prefWidth="198.0" promptText="Select Basic Math Operation" />
+      <Button fx:id="per" layoutX="78.0" layoutY="218.0" mnemonicParsing="false" onAction="#perf" prefHeight="26.0" prefWidth="198.0" text="Perform Math Operation" />
+      <Text layoutX="37.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results:" />
+      <Button fx:id="opentxt" layoutX="282.0" layoutY="351.0" mnemonicParsing="false" onAction="#opentxt" prefHeight="26.0" prefWidth="132.0" text="Open Text File" />
+      <RadioButton fx:id="male" layoutX="404.0" layoutY="212.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="female" layoutX="558.0" layoutY="210.0" mnemonicParsing="false" text="Female" toggleGroup="$gender" />
+      <TextArea fx:id="pastetxt" layoutX="35.0" layoutY="385.0" prefHeight="182.0" prefWidth="648.0" />
+      <Button fx:id="savedet" layoutX="458.0" layoutY="274.0" mnemonicParsing="false" onAction="#SAVEDETAILS" prefHeight="26.0" prefWidth="138.0" text="Save Details" />
+      <Label fx:id="label" layoutX="86.0" layoutY="287.0" text="Label" />
+      <Button fx:id="logout" layoutX="618.0" layoutY="352.0" mnemonicParsing="false" onAction="#logout" text="LOGOUT" />
+   </children>
+</AnchorPane>
